@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+
+.navbar-nav li{
+  padding-right: 20px;
+}
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+    
+
+
+
+
+
+
+
+
+body {
+  background: rgb(230, 212, 216);
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+}
+
+input, button {
+  font-weight: 700;
+}
+
+.main-div, .loggedin-div {
+  width: 20%;
+  margin: 0px auto;
+  margin-top: 150px;
+  padding: 20px;
+  padding-bottom: 15px;
+  display: none;
+}
+
+.main-div input {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div input:focus {
+  border: 1px solid #777;
+}
+
+.main-div button, .loggedin-div button {
+  background: #5d8ffc;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  border-radius: 5px;
+  padding: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div button:hover, .loggedin-div button:hover {
+  background: #fff;
+  color: #5d8ffc;
+  border: 1px solid #5d8ffc;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
